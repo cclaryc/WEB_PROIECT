@@ -1,0 +1,242 @@
+.titles{
+text-align: center;
+   color: rgba(175, 47, 47, 0.15);
+   font-size: 60px;
+
+}
+#main_input{
+   text-align: left;
+   left: 50px;
+   font-size: 24px;
+   border-width: 1px;
+   border-style: solid; /* face borderu doar o linie*/
+   border-color: rgba(43, 43, 43, 0.162);
+   height: 60px;
+   padding-left: 50px; /*ca sa nu si dea overlay textu cu butonu*/
+   color:rgba(77,77,77,255);
+   border-bottom: 2px solid #ededed;
+}
+.entered_text {
+    text-align: left;
+    left: 50px;
+    font-size: 24px;
+    border-width: 1px; 
+    border-color: rgba(43, 43, 43, 0.162);
+    height: 60px;
+    background-color: white;
+    padding-left: 50px;
+    color: rgba(77, 77, 77, 255);
+    display: flex; /* Add this */
+    align-items: center; /* Add this */
+    border-bottom: 1px solid #ededed;
+}
+.entered_text_crossed {
+    text-align: left;
+    left: 50px;
+    font-size: 24px;
+    border-width: 1px;
+    border-color: rgba(43, 43, 43, 0.162);
+    height: 60px;
+    background-color: white;
+    padding-left: 50px;
+    display: flex; /* Add this */
+    align-items: center; /* Add this */
+    text-decoration: line-through;
+    color: rgb(236, 236, 236); 
+}
+body{
+    background-color: rgba(245,245,245,255);
+    font: 10px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+.inputt{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    flex-wrap: wrap;
+    width: 550px; /* LATIMEA UNUI FLEXBOX LUATA DIN CONSOLA*/
+    position: relative;
+}
+.flexcontainer{
+    text-align: center;
+    display: flex;
+     justify-content: center;
+     flex-direction: column;
+     width: 550px;
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+     margin: auto; /* a centrat containeru pe pag*/ 
+}
+#main_input:focus{
+    border: transparent;
+    outline: none; /* cand introduc sa nu mi mai puna border cu negru cand bag text*/
+}
+h1{
+    border-radius: 0%;
+    margin-block: 0%;
+    font-weight: 100; /*facem fontu subtire, m am inspirat*/
+    font-size: 100px;
+}
+::placeholder {
+    color: rgb(236, 236, 236);
+    
+}
+.butonul {
+    position: absolute;
+    top: 10px; 
+    border: none;
+    background: url('https://i.ibb.co/hYPztbk/Screenshot-2023-12-29-173450.png') center center no-repeat;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+    margin-left: 10px; /*face ca butonu sa nu iasa dinc chenar*/ 
+    display: none;
+}
+.butonul_exista {
+    position: absolute;
+    top: 10px; 
+    border: none;
+    background: url('https://i.ibb.co/hYPztbk/Screenshot-2023-12-29-173450.png') center center no-repeat;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+    margin-left: 10px; /*face ca butonu sa nu iasa dinc chenar*/
+    display:block;
+}
+.butonul_exista_clicked{
+    position: absolute;
+    top: 10px; 
+    border: none;
+    background: url('https://i.ibb.co/cgTpqXN/Screenshot-2024-01-03-012350.png') center center no-repeat;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+    margin-left: 10px; /*face ca butonu sa nu iasa dinc chenar*/
+    display: block;
+}
+.the_x {
+position:absolute;
+right: 10px;
+background: url('https://i.ibb.co/GxhyxLf/image-2023-12-30-014259238.png') center center no-repeat;
+cursor: pointer;
+border: none;
+width: 20px;
+height: 60px;
+margin-right: 10px;
+display: none;
+}
+.the_x_hover{
+    position:absolute;
+    background:url('https://i.ibb.co/px9VxMk/image-2023-12-30-021048199.png') center center no-repeat;
+    cursor: pointer;
+    border: none;
+    width: 20px;
+    height: 60px;
+    margin-right: 10px;
+
+}
+.the_Dot {
+    position:absolute;
+    left: 5px;
+    background: url('https://i.ibb.co/4R6wZ8H/image-2023-12-30-123305314.png') center center no-repeat;
+    cursor: pointer;
+    border: none;
+    width: 40px;
+    height: 60px;
+}
+.the_Dot_clicked{
+    position:absolute;
+    left: 5px;
+    background: url('https://i.ibb.co/v18TKB4/image-2023-12-30-132106317.png') center center no-repeat;
+    cursor: pointer;
+    border: none;
+    width: 40px;
+    height: 60px;
+}
+.the_Dot_hide{
+    display: none;
+}
+.footer-list {
+    list-style: none;
+   padding: 0 30px 0 70px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.buttons_list {
+    border:1px solid transparent;
+    background-color: white;
+    color: #777;
+    font-size: 15px;
+}
+.buttons_list:hover {
+    border:1px solid;
+    background-color: white;
+    color: #777;
+    border-radius: 3px;
+    border-color: rgba(247,234,234,255);
+}
+.buttons_list_clicked{
+    border:1px solid transparent;
+    background-color: white;
+    border-radius: 3px;
+    color: #777;
+    border-color: rgba(239,213,213,255);
+}
+li {
+   margin: 0 15px;
+}
+footer{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.num_left{
+    text-align: left;
+   /* padding-top: 15px;*/
+    color: #777;
+    padding-left: 15px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.clear_completed {
+    background-color: white;
+    color: #777;
+    width: 101px;
+    border: none;
+    white-space: nowrap;
+   /* padding-right: 101px; */
+    padding-right: 15px;
+
+}
+.clear_completed:hover {
+    background-color: white;
+    color: #777;
+    border:none;
+    text-decoration: underline;
+    width: 101px;
+    padding-right: 15px;
+    white-space: nowrap;
+}
+#details {
+    margin: 65px auto 0;
+    color: #bfbfbf;
+    margin: auto;
+    font-size: 10px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    text-align: center;
+    line-height: 1;
+    padding-top: 45px;
+    text-decoration: none;
+}
+.not{
+    text-decoration: none;
+}
+a{
+    color: #bfbfbf;
+}
+a:hover{
+    text-decoration: underline;
+}
